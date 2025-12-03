@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #eef3ff;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+.topbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: center;
+    padding: 35px 20px;
+    color: white;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.topbar h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    padding: 14px 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 600;
+    margin: 8px 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    background: #1e3c72;
+    color: white;
+}
+
+
+.about-hero {
+    display: flex;
+    gap: 25px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-img-box {
+    flex: 1;
+    min-width: 320px;
+}
+
+.hero-img-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #1e3c72;
+}
+
+
+.two-cols {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-card h3 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #1e3c72;
+    color: white;
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.stat-card h4 {
+    font-size: 20px;
+}
+
+
+.site-footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+img {
+    border: 2px solid black;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .about-text h2 {
+        font-size: 24px;
+    }
+    .hero-img-box img {
+        height: 250px;
+    }
+}

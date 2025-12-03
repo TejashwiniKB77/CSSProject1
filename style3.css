@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #eef4ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.topbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.topbar h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 15px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 12px 10px;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    background: #1e3c72;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0 15px;
+    font-size: 28px;
+    color: #1e3c72;
+}
+
+.grid-courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: 0.3s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.circle img {
+    border-radius: 50%;
+}
+
+.rounded img {
+    border-radius: 15px;
+}
+
+.square img {
+    border-radius: 0;
+}
+
+.oval img {
+    border-radius: 50px;
+}
+
+.cardshadow img {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.img-box p {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.site-footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .topbar h1 {
+        font-size: 24px;
+    }
+}
